@@ -30,3 +30,8 @@ fatal: remote origin already exists.
 
 >1、先输入$ git remote rm origin<br>
 2、再输入$ git remote add origin git@github.com:dengzhaotai/vlc_play.git 就不会报错了！
+
+* 给版本号为3.5.3的APP打TAG
+>git tag v3.5.3
+* 远程推送tag
+>git push --tags
