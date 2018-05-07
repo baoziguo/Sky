@@ -35,3 +35,18 @@ fatal: remote origin already exists.
 >git tag v3.5.3
 * 远程推送tag
 >git push --tags
+
+* 同一个项目关联两个或多个远程仓库
+>https://github/baoziguo/Sky.git github上的<br>
+git@gitee.com/baoziguo/Sky.git 码云上的<br>
+git remote add origin https://github/baoziguo/Sky.git<br>
+git remote set-url –add origin git@gitee.com/baoziguo/Sky.git<br>
+git push 还是 git push origin 还是 git push origin -all都可以！！！
+
+* 查看本地仓库关联的远程
+>git remote -v<br>
+输入如下结果：<br>
+origin  https://github/baoziguo/Sky.git (fetch)<br>
+origin  https://github/baoziguo/Sky.git (push)<br>
+origin  git@gitee.com/baoziguo/Sky.git (push)<br>
+执行git pull或者git fetch这些拉取远程仓库的命令时，拉的都是带有fetch的这个，而git push这些，2个远程仓库都会执行到。。。
