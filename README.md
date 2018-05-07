@@ -45,8 +45,9 @@ git push 还是 git push origin 还是 git push origin -all都可以！！！
 
 * 查看本地仓库关联的远程
 >git remote -v<br>
-输入如下结果：<br>
+输出如下结果：<br>
 origin  https://github/baoziguo/Sky.git (fetch)<br>
 origin  https://github/baoziguo/Sky.git (push)<br>
 origin  git@gitee.com/baoziguo/Sky.git (push)<br>
-执行git pull或者git fetch这些拉取远程仓库的命令时，拉的都是带有fetch的这个，而git push这些，2个远程仓库都会执行到。。。
+执行git pull或者git fetch这些拉取远程仓库的命令时，拉的都是带有fetch的这个，而git push这些命令，2个远程仓库都会执行到<br>
+ps:看到git地址后面括号里的，其实就能明白意思了，就是告诉我们，github这个git远程仓库，既能被push又能被pull或者fetch，而码云上的只能被push。
