@@ -54,3 +54,6 @@ ps:看到git地址后面括号里的，其实就能明白意思了，就是告�
 
 * 长期存储密码
 >git config --global credential.helper store
+
+* 清除存储密码
+>git config --system --unset credential.helper
