@@ -40,7 +40,7 @@ fatal: remote origin already exists.
 >https://github/baoziguo/Sky.git github上的<br>
 git@gitee.com/baoziguo/Sky.git 码云上的<br>
 git remote add origin https://github/baoziguo/Sky.git<br>
-git remote set-url –add origin git@gitee.com/baoziguo/Sky.git<br>
+git remote set-url --add origin git@gitee.com/baoziguo/Sky.git<br>
 git push 还是 git push origin 还是 git push origin -all都可以！！！
 
 * 查看本地仓库关联的远程
